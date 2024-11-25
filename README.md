@@ -1,3 +1,4 @@
+
 - 👋 Hi, I’m @Ammayra
 - 👀 I’m interested in ...
 - 🌱 I’m currently learning ...
@@ -134,3 +135,7 @@ from app import db, app
 with app.app_context():
     db.create_all()
     python app.py
+
+api_key = 'your_openweathermap_api_key'
+url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}'
+response = requests.get(url).json()
